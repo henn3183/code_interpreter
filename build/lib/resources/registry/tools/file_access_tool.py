@@ -65,7 +65,7 @@ class FileAccessTool(ToolInterface):
             self.logger.error(error_msg)
             return error_msg
         except Exception as e:
-            error_msg = f"Error while reading the CSV file: {str(e)}"
+            error_msg = f"Error while reading the JSON file: {str(e)}"
             self.logger.error(error_msg, exc_info=True)
             return error_msg
 

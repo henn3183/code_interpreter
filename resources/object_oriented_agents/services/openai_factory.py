@@ -13,7 +13,7 @@ class OpenAIClientFactory:
         The API key can be passed explicitly or read from the environment.
         """
         final_api_key = OpenAIClientFactory._resolve_api_key(api_key)
-        return OpenAI(api_key=final_api_key)
+        return OpenAI(api_key=final_api_key, base_url="https://api.deepseek.com")
 
     @staticmethod
     def _resolve_api_key(api_key: str = None) -> str:

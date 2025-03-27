@@ -40,7 +40,7 @@ class PythonExecAgent(BaseAgent):
                     4. You can use Python libraries pandas, numpy, matplotlib, seaborn, and scikit-learn. 
                     5. Interpret the results of the code execution and provide analysis to the user. 
                 """,
-            model_name: str = "gpt-4o-mini",
+            model_name: str = "deepseek-chat",
             logger=myapp_logger,
             language_model_interface=language_model_api_interface,
             reasoning_effort: str = None  # optional; if provided, passed to API calls

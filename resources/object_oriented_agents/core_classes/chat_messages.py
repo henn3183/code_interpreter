@@ -11,7 +11,7 @@ class ChatMessages:
         self.add_developer_message(developer_prompt)
 
     def add_developer_message(self, content: str) -> None:
-        self.messages.append({"role": "developer", "content": content})
+        self.messages.append({"role": "system", "content": content})
 
     def add_user_message(self, content: str) -> None:
         self.messages.append({"role": "user", "content": content})

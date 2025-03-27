@@ -64,7 +64,7 @@ file_ingestion_agent = FileAccessAgent()
 
 # Let's make sure agent uses o3-mini model and set the reasoning_effort to high
 #data_analysis_agent = PythonExecAgent(model_name='o1-mini', reasoning_effort='high')
-data_analysis_agent = PythonExecAgent(model_name='gpt-4o-mini')
+data_analysis_agent = PythonExecAgent(model_name='deepseek-chat')
 
 
 print("Understanding the contents of the file...")

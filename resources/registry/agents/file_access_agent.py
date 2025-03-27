@@ -15,8 +15,8 @@ from ..tools.file_access_tool import FileAccessTool
 myapp_logger = get_logger("MyApp", level=logging.INFO)
 
 # Load the environment variables
-dotenv_path = '/Users/ryanhennig/Repos/openai-cookbook/.env'
-load_dotenv(dotenv_path)
+#dotenv_path = '/Users/ryanhennig/Repos/openai-cookbook/.env'
+load_dotenv()
 
 # Create a LanguageModelInterface instance using the OpenAILanguageModel
 language_model_api_interface = OpenAILanguageModel(api_key=os.getenv("OPENAI_API_KEY"), logger=myapp_logger)
@@ -38,7 +38,7 @@ class FileAccessAgent(BaseAgent):
 
                  Do not include any additional commentary or code not related to reading the file.
                  """,
-                 model_name: str = "gpt-4o",
+                 model_name: str = "deepseek-chat",
                  logger = myapp_logger,
                  language_model_interface = language_model_api_interface):
         super().__init__(developer_prompt=developer_prompt, model_name=model_name, logger=logger, language_model_interface=language_model_interface)
