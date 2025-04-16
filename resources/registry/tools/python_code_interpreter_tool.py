@@ -17,7 +17,7 @@ class PythonExecTool(ToolInterface):
         return {
             "function": {
                 "name": "execute_python_code",
-                "description": "Executes Python code securely in a container. Python version 3.10 is installed in the container. pandas, numpy, matplotlib, seaborn, and scikit-learn are installed in the container.",
+                "description": "Executes Python code securely in a container. Python version 3.10 is installed in the container. pandas, plotly, seaborn, and scikit-learn are installed in the container.",
                 "parameters": {
                     "type": "object",
                     "properties": {

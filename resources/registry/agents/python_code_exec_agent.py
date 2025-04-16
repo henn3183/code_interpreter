@@ -37,7 +37,7 @@ class PythonExecAgent(BaseAgent):
                     - Column names and their descriptions.
                     - Sample data from the JSON data to help understand data types.
                     3. Generate Python code to analyze the data and call the tool `execute_python_code` to run the code and get results.
-                    4. You can use Python libraries pandas, numpy, matplotlib, seaborn, and scikit-learn. 
+                    4. You can use Python libraries pandas, numpy, plotly, seaborn, and scikit-learn. 
                     5. Interpret the results of the code execution and provide analysis to the user. 
                 """,
             model_name: str = "deepseek-chat",
